@@ -1,0 +1,12 @@
+<?php
+/**
+ * @var $block  Storetransform\Number\Block\PhoneNumber
+ */
+?>
+<script type="text/x-magento-init">
+    {
+        "input[name='telephone']": {
+            "Storetransform_Number/js/internationalTelephoneInput": <?php echo $block->phoneConfig(); ?>
+        }
+    }
+</script>

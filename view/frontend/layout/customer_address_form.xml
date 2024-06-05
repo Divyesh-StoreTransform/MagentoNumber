@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Storetransform_Number::css/intlTelInput.css"/>
+    </head>
+    <body>
+        <referenceContainer name="main">
+            <block class="Storetransform\Number\Block\PhoneNumber"
+                   ifconfig="internationaltelephoneinput/general/enabled"
+                   template="Storetransform_Number::js-address.phtml"
+                   name="international.telephone.input"/>
+        </referenceContainer>
+    </body>
+</page>
